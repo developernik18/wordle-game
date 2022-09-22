@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import { allLetters } from '../data/db';
 
 export default function Keypad( {usedKeys, handleKeypadKeys} ) {
-  const [letters, setLetters] = useState(null);
-
-  useEffect(() => {
-    fetch(' http://localhost:3001/letters')
-      .then(res => res.json())
-      .then(json => {
-        setLetters(json);
-      })
-  },[]);
+  const [letters] = useState( allLetters );
   
 
   return (

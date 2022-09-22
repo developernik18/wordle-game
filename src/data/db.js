@@ -1,5 +1,4 @@
-{
-  "letters": [
+export const allLetters = [
     {"key": "a"},
     {"key": "b"},
     {"key": "c"},
@@ -26,8 +25,10 @@
     {"key": "x"},
     {"key": "y"},
     {"key": "z"}
-  ],
-  "solutions": [
+  ];
+
+
+export const allSolutions = [
     {"word": "union", "id":1},
     {"word": "ocean", "id":2},
     {"word": "trade", "id":3},
@@ -48,5 +49,4 @@
     {"word": "dress", "id":18},
     {"word": "dance", "id":19},
     {"word": "cover", "id":20}
-  ]
-}
+  ];
