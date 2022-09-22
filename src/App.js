@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Wordle from "./components/Wordle";
 import { allSolutions } from "./data/db";
 
 function App() {
-  const [solution, setSolution] = useState(
+  const [solution] = useState(
     allSolutions[Math.floor(Math.random() * allSolutions.length)].word
   );
 
